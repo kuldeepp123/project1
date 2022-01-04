@@ -1,0 +1,109 @@
+.edit-profile {
+    position: relative;
+    margin: auto;
+}
+
+.edit-profile .personal-info {
+    padding: 0;
+}
+
+.edit-profile .back-button {
+    background: transparent;
+    border: none;
+    width: 60px;
+    height: 60px;
+    justify-content: flex-start;
+    position: absolute;
+    left: -80px;
+}
+
+.edit-profile .back-button:hover {
+    background-color: #e8f0fe;
+    border-radius: 50%;
+}
+
+.edit-profile .basic-info {
+    min-height: 432px;
+}
+
+.edit-profile .info-title {
+    padding: 25px 20px 20px;
+}
+
+.edit-profile .info-field {
+    padding: 10px 20px;
+    min-height: 60px;
+}
+
+.edit-profile .info-field .info-name {
+    min-width: 210px;
+    text-transform: uppercase;
+}
+
+.edit-profile .info-field .info-image .photo {
+    width: 60px;
+    height: 60px;
+    /* background-color: #073D83; */
+    background-color: #c5c5c5;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.edit-profile .info-field .info-image {
+    overflow: hidden;
+}
+
+.edit-profile .info-field .info-text {
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.edit-profile .info-field .info-detail {
+    margin-left: auto;
+}
+
+.contact-info {
+    min-height: 215px;
+    overflow: hidden;
+}
+
+.select-form {
+    margin-right: 10px;
+    border-radius: 0;
+    min-width: 88px;
+    width: auto;
+}
+
+.mobile-no .MuiInput-root::before,
+.MuiInput-root::after {
+    display: none !important;
+}
+
+.mobile-no .MuiInputBase-input {
+    font-size: 16px;
+    line-height: 26px;
+    color: #4c4f53;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    .edit-profile .info-field .info-name {
+        min-width: 140px;
+    }
+    .edit-profile .info-field .info-detail {
+        margin-left: initial;
+    }
+    .edit-profile .info-field .info-image .photo {
+        margin-right: 10px;
+    }
+    .edit-profile .personal-info {
+        padding: 0 0 0 40px;
+    }
+    .edit-profile .back-button {
+        left: 0;
+    }
+}

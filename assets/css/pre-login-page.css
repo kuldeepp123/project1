@@ -1,0 +1,333 @@
+.pre-login-header {
+  padding: 50px 50px 0;
+}
+
+.pre-login-container {
+  padding: 0 200px 0 100px;
+  min-height: calc(100vh - 270px);
+}
+
+.pre-login-page {
+  padding: 135px 0;
+  min-height: 100vh;
+}
+
+.pre-login-page .input-group .custom-input {
+  height: 50px;
+}
+
+/* .pre-login-page.login {
+  background: url("/src/assets/images/login-bg.png") no-repeat center center;
+  background-size: cover;
+}
+
+.pre-login-page.register {
+  background: url("/src/assets/images/register-bg.png") no-repeat center center;
+  background-size: cover;
+} */
+
+.login-signup-tabs {
+  width: 500px;
+  min-width: 500px;
+  min-height: 640px;
+  position: relative;
+}
+
+.login-signup-tabs.w-380px {
+  width: 380px;
+  min-width: 380px;
+  min-height: auto;
+}
+
+.login-signup-tabs .nav-tabs .nav-link {
+  border-radius: 0;
+}
+
+.login-signup-tabs .nav-tabs .nav-item:first-child .nav-link {
+  border-right: none;
+}
+
+.login-signup-tabs .nav-tabs .nav-item:last-child .nav-link {
+  border-left: 1px solid #ddd;
+}
+
+.login-signup-tabs .tab-header {
+  margin: 0 0 30px;
+}
+
+.login-signup-tabs .email-account {
+  border: 1px solid #DADCE0;
+}
+
+.login-signup-tabs .email-account .user {
+  width: 20px;
+  line-height: 0;
+}
+
+.login-signup-tabs .tab-content {
+  padding: 40px;
+}
+
+.login-signup-tabs .footer-links {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+}
+
+.login-signup-tabs .input-group:not(:last-child) {
+  margin: 0 0 20px;
+}
+
+.login-signup-tabs .form-group-wrap {
+  margin: 0 0 10px;
+}
+
+.separator {
+  position: relative;
+}
+
+.separator span {
+  z-index: 1;
+}
+
+.separator::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #dadce0;
+}
+
+/* .pre-login-slider .carousel {
+    padding-bottom: 30px;
+} */
+
+.pre-login-slider {
+  margin-right: 40px;
+}
+
+.pre-login-slider .carousel-item>div {
+  max-width: 900px;
+}
+
+.pre-login-slider .carousel-indicators:after {
+  height: 3px;
+  position: absolute;
+  content: "";
+  width: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  background: #fff;
+  transition: all 0.3s;
+}
+
+.pre-login-slider .active-slide-0 .carousel-indicators:after {
+  width: 130px;
+  animation: animWidth 0.3s;
+}
+
+.pre-login-slider .active-slide-1 .carousel-indicators:after {
+  width: 260px;
+}
+
+.pre-login-slider .active-slide-2 .carousel-indicators:after {
+  width: 390px;
+}
+
+.pre-login-slider .carousel-indicators li {
+  height: 1px;
+  background: #fff;
+  width: 130px;
+  cursor: pointer;
+  position: relative;
+}
+
+@keyframes animWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 130px;
+  }
+}
+
+.pre-login-slider .carousel-item {
+  transition: transform 0s;
+  opacity: 0;
+  display: block;
+}
+
+.pre-login-slider .carousel-item-next, .pre-login-slider .carousel-item-prev, .pre-login-slider .carousel-item.active {
+  opacity: 1;
+  transition: opacity 0.6s 0.2s ease-in-out, transform 0s;
+}
+
+@media (max-width: 1680px) {
+  .pre-login-page {
+    padding: 95px 0 70px;
+  }
+  .pre-login-container {
+    padding: 0 140px 0 70px;
+  }
+  .pre-login-header {
+    padding: 40px 40px 0;
+  }
+  .login-signup-tabs .tab-header {
+    margin: 0 0 20px;
+  }
+  .login-signup-tabs .tab-content {
+    padding: 20px 30px;
+  }
+  .login-signup-tabs .footer-links {
+    left: 30px;
+    right: 30px;
+    bottom: 20px;
+  }
+  .login-signup-tabs {
+    width: 415px;
+    min-width: 415px;
+    min-height: 539px;
+  }
+  .login-signup-tabs.w-380px {
+    width: 350px;
+    min-width: 350px;
+    min-height: auto;
+  }
+  .pre-login-page .input-group .custom-input {
+    height: 44px;
+  }
+  .login-signup-tabs .input-group:not(:last-child) {
+    margin: 0 0 15px;
+  }
+  .login-signup-tabs .nav-tabs .nav-link {
+    padding: 10px !important;
+  }
+  .pre-login-slider .carousel-inner .mb-4, .login-signup-tabs .mb-4, .login-signup-tabs .my-4 {
+    margin-bottom: 15px !important;
+  }
+  .login-signup-tabs .my-4 {
+    margin-top: 15px !important;
+  }
+}
+
+@media (max-width: 1399px) {
+  .pre-login-header {
+    padding: 30px 30px 0;
+  }
+  .pre-login-header .header-logo {
+    width: 150px;
+  }
+  .pre-login-page {
+    padding: 80px 0 60px;
+  }
+  .login-signup-tabs {
+    width: 375px;
+    min-width: 375px;
+    min-height: 485px;
+  }
+  .login-signup-tabs.w-380px {
+    width: 350px;
+    min-width: 350px;
+    min-height: auto;
+  }
+  .pre-login-container {
+    padding: 0 100px 0 50px;
+  }
+  .login-signup-tabs .tab-content {
+    padding: 15px 25px;
+  }
+  .login-signup-tabs .footer-links {
+    left: 25px;
+    right: 25px;
+    bottom: 15px;
+  }
+  .pre-login-page .input-group .custom-input {
+    height: 38px;
+  }
+  .pre-login-slider .carousel-inner .mb-4, .login-signup-tabs .mb-4 {
+    margin-bottom: 10px !important;
+  }
+  .pre-login-slider .carousel {
+    padding-bottom: 30px !important;
+  }
+  .pre-login-slider .carousel {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .pre-login-header {
+    padding: 20px 20px 0;
+  }
+  .pre-login-container {
+    padding: 0 70px 0 40px;
+    min-height: 100%;
+  }
+  .pre-login-slider .carousel {
+    width: 95%;
+  }
+}
+
+@media (max-width: 991px) {
+  .pre-login-container {
+    padding: 0 30px;
+  }
+  .pre-login-slider .carousel {
+    width: 100%;
+  }
+  .login-signup-tabs {
+    width: 350px;
+    min-width: 350px;
+  }
+  .pre-login-slider .active-slide-0 .carousel-indicators:after {
+    width: 106px;
+  }
+  .pre-login-slider .active-slide-1 .carousel-indicators:after {
+    width: 212px;
+  }
+  .pre-login-slider .active-slide-2 .carousel-indicators:after {
+    width: 318px;
+  }
+  .pre-login-slider .carousel-indicators li {
+    width: 106px;
+  }
+  @keyframes animWidth {
+    from {
+      width: 0;
+    }
+    to {
+      width: 106px;
+    }
+  }
+}
+
+.center-m50 {
+  text-align: center;
+  margin: 50px 10px;
+}
+
+@media (max-width: 767px) {
+  .pre-login-container, .login-signup-tabs .tab-content {
+    padding: 15px;
+  }
+  .login-signup-tabs .footer-links {
+    left: 15px;
+    right: 15px;
+  }
+  .login-signup-tabs {
+    width: 420px;
+    max-width: 100%;
+    min-width: auto;
+  }
+  .login-signup-tabs.w-380px {
+    width: 280px;
+    min-width: auto;
+    max-width: calc(100% - 30px);
+    min-height: auto;
+  }
+}

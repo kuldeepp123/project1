@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , user-scalable="no">
+    <meta name="Extention" content="Extention">
+    <title>Demo Theme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet">
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link href="assets/css/form-element.css" rel="stylesheet">
+    <link href="assets/css/header.css" rel="stylesheet">
+    <link href="assets/css/footer.css" rel="stylesheet">
+    <link href="assets/css/pre-login-page.css" rel="stylesheet">
+    <link href="assets/css/profile.css" rel="stylesheet">
+    <link href="assets/css/edit-profile.css" rel="stylesheet">
+    <link href="assets/css/accounts.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="d-flex justify-content-between align-items-center w-100 header">
+            <div class="d-flex"><img src="assets/images/svg/main-logo-blue.svg" alt="logo">
+                <div class="kyc-title">
+                    <p class="font-20 fw-bold color-black1">PROFILE</p>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="d-flex align-items-center justify-content-center header-dropdown dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="menu-button w-100 h-100 btn btn-secondary"><img src="assets/images/svg/menu.svg"
+                            alt="menu"></button>
+                    <div tabindex="-1" role="menu" aria-hidden="true" class="rounded-10 menu-list border-grey dropdown-menu">
+                        <div class="projects-section"><button type="button" tabindex="0" role="menuitem" class="d-flex flex-wrap project-list dropdown-item">
+                                <div class="d-flex align-items-center justify-content-start flex-column project false">
+                                    <div class="app-img"><img
+                                            src="https://edexa-portal-beta.s3.ap-south-1.amazonaws.com/assets/logo/edexa-x-logo.png"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">portal</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-start flex-column project false">
+                                    <div class="app-img"><img
+                                            src="https://edexa-portal-beta.s3.ap-south-1.amazonaws.com/bStamp/bstamp-icon.svg"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">bStamp</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-start flex-column project false">
+                                    <div class="app-img"><img
+                                            src="https://edexa-portal-beta.s3.ap-south-1.amazonaws.com/banji-icon.png"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">banji</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-start flex-column project false">
+                                    <div class="app-img"><img
+                                            src="https://edexa-portal-beta.s3.ap-south-1.amazonaws.com/bmessage_icon.svg"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">bMessage</p>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-start flex-column project disable">
+                                    <div class="app-img"><img
+                                            src="https://edexa-portal-beta.s3.ap-south-1.amazonaws.com/bpay.png"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">bPay</p>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-start flex-column project disable">
+                                    <div class="app-img"><img
+                                            src="https://edexa-portal-beta.s3.ap-south-1.amazonaws.com/bvote-icon.svg"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">bVote</p>
+                                </div>
+                            </button>
+                            <div tabindex="-1" class="dropdown-divider"></div><button type="button" tabindex="0" role="menuitem" class="d-flex flex-wrap project-list dropdown-item">
+                                <div
+                                    class="d-flex align-items-center justify-content-start flex-column project disable">
+                                    <div class="app-img"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABHNCSVQICAgIfAhkiAAABQNJREFUWEe9WGtMHFUU/u7skoC0qKUVSv1hSjVpTaoGbW20DbYqggrMIDU2/qlRt+wutKm2JjSxRBPwUW0D7CzV9o8GE0NZ6KJYbWzxEWlt6EOMtUbbqD+UqhATHguz3OsZVhDYmbnLVp1kfuzec879zvucYSgLvgtgI71OzwAMsQZh7wUJnfWxqr8GhW2X8I5hHAUMRYFspLGvAZbpyCDQjf6+deiqic4JlBp8CAxhepkjHxcvoM27O0ZUHrgVXDkjvYjzJrT5KqR0kwT5NW5kZv1MP7OdlRXfo//yclPZv1ELBjVYB8Z2OmoiMIpI9A50VvYmBErVu0jmOmeZYgTG+M3oqLxkypxuRgZN7yYBqyWX/YmxoWXoePZ3R7rSgB8uZR/RuGzphIgSgnK0etsnaWb6tTiwDG52gkA5xxPnheS6I7YXqY03QXGdp3PFWTnRSmAemU4TH2hawAOm6JbCBAQgesnfebbBXfzyfLgzTpLmyyVxcxEj0RX4oGrUGZB5qupvU5o+biFwAK1byHqMgNk8WtNeOt4myVhSTdxDWfXJbDrrVHx4z0KkpF8gLRdMY+AweDnCvpC9q/Ry4nmHXO6WWGcXQt5aKxr72qA2rqE4+GKKSaAZoQorq8VICg4sQLrxFQFaIrFONwYH78NHO4bmBsjMQDVQC0XZSYw/YHDkTny4vd/BOsfJzfmSIDYwwm9Ep/9HOzrn6mlyafqXEHwX2vxHbS8roURwKUFJNTYQ5Ztw2HfICbQckLPKQBGleJrLuceZ2cnEIUpxWc+U9BcZmPtfTce8eedISq4kbr6FoeShwzMsE3llFtKCewjMM5JLyFViAw57P5OBMc+TB6Q1PArmbiYZ9q3BvEGwaoS21CUCJnlAhfWLkJZiumqx40VcnKJmvHZ2Nf73g1oLniIwt0vihqq5sgQhzy+JWid5C2k6WYetlNQcDs4Wo63i8v8AqP56wH2aQC2SuOwYfnI9gB6PkSio5INabXyCWsubdJHziMGxlaxU/98DmqjigSYaVTzOsSRGwXEX2r09iYBK3kKm9Hv3X40MfnHWVBB/rxA9CB2nSbRlXAZKDujuumux8KqlaN9qraFafwuUlLPyjBMHaeR46soBmXM2kAVjeJXNHG0uCM+RlWolzTUCHn0QbZXHkq9Dml5NmfTiROAK2q1CFSW2wsr0E1T4ZQvCCI0fS9Hp+9VOjr3LyoK3EdPpKUazYwteTcP9S5bCil7JRup8s3pfJykFR6h6l9pVb2tAhfUZ1Bq+I+FZs4RHMDa4Ah07JnaouEfVN9OQZpYCSX/jPoR85iIR91gD0oI6gbHbUCOIiBy87x2wBFUWfIP+lwWvAQOrEa6I25bjAZXom2g3e8tRS86PYuC3IstVqOB1mq3TekihGySZdw6uzDy0bJxRCmYtig05cLuocbIcSXq+h/N9ZfimZsySrlhfSUqdlazlZlQeoCr+9HQZMwGp+scUA+slmg0jwnOdMmWCX9Wfp9zcTZln31rMbwXjfD3N2VPbzT+A1MYqMNc+yYeBKA3qGxD2fyqxYOw4kTEFYgjGWC7C2/pMlhigRHdxLlpo25QO6lNgY2v1JbrF/lvBxAKAz9Halw/UcIbSvddAST0jDUKgF3+krkLX5khC1pkkKg08RrtdszSeOK9Cu6+RPsEEGiiIvZK4icR87T85JzCTxJq+nwA9KY1NLtb+BR3isHDQd/pcAAAAAElFTkSuQmCC"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">edeXa</p>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-start flex-column project disable">
+                                    <div class="app-img"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABHNCSVQICAgIfAhkiAAABQNJREFUWEe9WGtMHFUU/u7skoC0qKUVSv1hSjVpTaoGbW20DbYqggrMIDU2/qlRt+wutKm2JjSxRBPwUW0D7CzV9o8GE0NZ6KJYbWzxEWlt6EOMtUbbqD+UqhATHguz3OsZVhDYmbnLVp1kfuzec879zvucYSgLvgtgI71OzwAMsQZh7wUJnfWxqr8GhW2X8I5hHAUMRYFspLGvAZbpyCDQjf6+deiqic4JlBp8CAxhepkjHxcvoM27O0ZUHrgVXDkjvYjzJrT5KqR0kwT5NW5kZv1MP7OdlRXfo//yclPZv1ELBjVYB8Z2OmoiMIpI9A50VvYmBErVu0jmOmeZYgTG+M3oqLxkypxuRgZN7yYBqyWX/YmxoWXoePZ3R7rSgB8uZR/RuGzphIgSgnK0etsnaWb6tTiwDG52gkA5xxPnheS6I7YXqY03QXGdp3PFWTnRSmAemU4TH2hawAOm6JbCBAQgesnfebbBXfzyfLgzTpLmyyVxcxEj0RX4oGrUGZB5qupvU5o+biFwAK1byHqMgNk8WtNeOt4myVhSTdxDWfXJbDrrVHx4z0KkpF8gLRdMY+AweDnCvpC9q/Ry4nmHXO6WWGcXQt5aKxr72qA2rqE4+GKKSaAZoQorq8VICg4sQLrxFQFaIrFONwYH78NHO4bmBsjMQDVQC0XZSYw/YHDkTny4vd/BOsfJzfmSIDYwwm9Ep/9HOzrn6mlyafqXEHwX2vxHbS8roURwKUFJNTYQ5Ztw2HfICbQckLPKQBGleJrLuceZ2cnEIUpxWc+U9BcZmPtfTce8eedISq4kbr6FoeShwzMsE3llFtKCewjMM5JLyFViAw57P5OBMc+TB6Q1PArmbiYZ9q3BvEGwaoS21CUCJnlAhfWLkJZiumqx40VcnKJmvHZ2Nf73g1oLniIwt0vihqq5sgQhzy+JWid5C2k6WYetlNQcDs4Wo63i8v8AqP56wH2aQC2SuOwYfnI9gB6PkSio5INabXyCWsubdJHziMGxlaxU/98DmqjigSYaVTzOsSRGwXEX2r09iYBK3kKm9Hv3X40MfnHWVBB/rxA9CB2nSbRlXAZKDujuumux8KqlaN9qraFafwuUlLPyjBMHaeR46soBmXM2kAVjeJXNHG0uCM+RlWolzTUCHn0QbZXHkq9Dml5NmfTiROAK2q1CFSW2wsr0E1T4ZQvCCI0fS9Hp+9VOjr3LyoK3EdPpKUazYwteTcP9S5bCil7JRup8s3pfJykFR6h6l9pVb2tAhfUZ1Bq+I+FZs4RHMDa4Ah07JnaouEfVN9OQZpYCSX/jPoR85iIR91gD0oI6gbHbUCOIiBy87x2wBFUWfIP+lwWvAQOrEa6I25bjAZXom2g3e8tRS86PYuC3IstVqOB1mq3TekihGySZdw6uzDy0bJxRCmYtig05cLuocbIcSXq+h/N9ZfimZsySrlhfSUqdlazlZlQeoCr+9HQZMwGp+scUA+slmg0jwnOdMmWCX9Wfp9zcTZln31rMbwXjfD3N2VPbzT+A1MYqMNc+yYeBKA3qGxD2fyqxYOw4kTEFYgjGWC7C2/pMlhigRHdxLlpo25QO6lNgY2v1JbrF/lvBxAKAz9Halw/UcIbSvddAST0jDUKgF3+krkLX5khC1pkkKg08RrtdszSeOK9Cu6+RPsEEGiiIvZK4icR87T85JzCTxJq+nwA9KY1NLtb+BR3isHDQd/pcAAAAAElFTkSuQmCC"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">edeXa</p>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-start flex-column project disable">
+                                    <div class="app-img"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABHNCSVQICAgIfAhkiAAABQNJREFUWEe9WGtMHFUU/u7skoC0qKUVSv1hSjVpTaoGbW20DbYqggrMIDU2/qlRt+wutKm2JjSxRBPwUW0D7CzV9o8GE0NZ6KJYbWzxEWlt6EOMtUbbqD+UqhATHguz3OsZVhDYmbnLVp1kfuzec879zvucYSgLvgtgI71OzwAMsQZh7wUJnfWxqr8GhW2X8I5hHAUMRYFspLGvAZbpyCDQjf6+deiqic4JlBp8CAxhepkjHxcvoM27O0ZUHrgVXDkjvYjzJrT5KqR0kwT5NW5kZv1MP7OdlRXfo//yclPZv1ELBjVYB8Z2OmoiMIpI9A50VvYmBErVu0jmOmeZYgTG+M3oqLxkypxuRgZN7yYBqyWX/YmxoWXoePZ3R7rSgB8uZR/RuGzphIgSgnK0etsnaWb6tTiwDG52gkA5xxPnheS6I7YXqY03QXGdp3PFWTnRSmAemU4TH2hawAOm6JbCBAQgesnfebbBXfzyfLgzTpLmyyVxcxEj0RX4oGrUGZB5qupvU5o+biFwAK1byHqMgNk8WtNeOt4myVhSTdxDWfXJbDrrVHx4z0KkpF8gLRdMY+AweDnCvpC9q/Ry4nmHXO6WWGcXQt5aKxr72qA2rqE4+GKKSaAZoQorq8VICg4sQLrxFQFaIrFONwYH78NHO4bmBsjMQDVQC0XZSYw/YHDkTny4vd/BOsfJzfmSIDYwwm9Ep/9HOzrn6mlyafqXEHwX2vxHbS8roURwKUFJNTYQ5Ztw2HfICbQckLPKQBGleJrLuceZ2cnEIUpxWc+U9BcZmPtfTce8eedISq4kbr6FoeShwzMsE3llFtKCewjMM5JLyFViAw57P5OBMc+TB6Q1PArmbiYZ9q3BvEGwaoS21CUCJnlAhfWLkJZiumqx40VcnKJmvHZ2Nf73g1oLniIwt0vihqq5sgQhzy+JWid5C2k6WYetlNQcDs4Wo63i8v8AqP56wH2aQC2SuOwYfnI9gB6PkSio5INabXyCWsubdJHziMGxlaxU/98DmqjigSYaVTzOsSRGwXEX2r09iYBK3kKm9Hv3X40MfnHWVBB/rxA9CB2nSbRlXAZKDujuumux8KqlaN9qraFafwuUlLPyjBMHaeR46soBmXM2kAVjeJXNHG0uCM+RlWolzTUCHn0QbZXHkq9Dml5NmfTiROAK2q1CFSW2wsr0E1T4ZQvCCI0fS9Hp+9VOjr3LyoK3EdPpKUazYwteTcP9S5bCil7JRup8s3pfJykFR6h6l9pVb2tAhfUZ1Bq+I+FZs4RHMDa4Ah07JnaouEfVN9OQZpYCSX/jPoR85iIR91gD0oI6gbHbUCOIiBy87x2wBFUWfIP+lwWvAQOrEa6I25bjAZXom2g3e8tRS86PYuC3IstVqOB1mq3TekihGySZdw6uzDy0bJxRCmYtig05cLuocbIcSXq+h/N9ZfimZsySrlhfSUqdlazlZlQeoCr+9HQZMwGp+scUA+slmg0jwnOdMmWCX9Wfp9zcTZln31rMbwXjfD3N2VPbzT+A1MYqMNc+yYeBKA3qGxD2fyqxYOw4kTEFYgjGWC7C2/pMlhigRHdxLlpo25QO6lNgY2v1JbrF/lvBxAKAz9Halw/UcIbSvddAST0jDUKgF3+krkLX5khC1pkkKg08RrtdszSeOK9Cu6+RPsEEGiiIvZK4icR87T85JzCTxJq+nwA9KY1NLtb+BR3isHDQd/pcAAAAAElFTkSuQmCC"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">edeXa</p>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-start flex-column project disable">
+                                    <div class="app-img"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABHNCSVQICAgIfAhkiAAABQNJREFUWEe9WGtMHFUU/u7skoC0qKUVSv1hSjVpTaoGbW20DbYqggrMIDU2/qlRt+wutKm2JjSxRBPwUW0D7CzV9o8GE0NZ6KJYbWzxEWlt6EOMtUbbqD+UqhATHguz3OsZVhDYmbnLVp1kfuzec879zvucYSgLvgtgI71OzwAMsQZh7wUJnfWxqr8GhW2X8I5hHAUMRYFspLGvAZbpyCDQjf6+deiqic4JlBp8CAxhepkjHxcvoM27O0ZUHrgVXDkjvYjzJrT5KqR0kwT5NW5kZv1MP7OdlRXfo//yclPZv1ELBjVYB8Z2OmoiMIpI9A50VvYmBErVu0jmOmeZYgTG+M3oqLxkypxuRgZN7yYBqyWX/YmxoWXoePZ3R7rSgB8uZR/RuGzphIgSgnK0etsnaWb6tTiwDG52gkA5xxPnheS6I7YXqY03QXGdp3PFWTnRSmAemU4TH2hawAOm6JbCBAQgesnfebbBXfzyfLgzTpLmyyVxcxEj0RX4oGrUGZB5qupvU5o+biFwAK1byHqMgNk8WtNeOt4myVhSTdxDWfXJbDrrVHx4z0KkpF8gLRdMY+AweDnCvpC9q/Ry4nmHXO6WWGcXQt5aKxr72qA2rqE4+GKKSaAZoQorq8VICg4sQLrxFQFaIrFONwYH78NHO4bmBsjMQDVQC0XZSYw/YHDkTny4vd/BOsfJzfmSIDYwwm9Ep/9HOzrn6mlyafqXEHwX2vxHbS8roURwKUFJNTYQ5Ztw2HfICbQckLPKQBGleJrLuceZ2cnEIUpxWc+U9BcZmPtfTce8eedISq4kbr6FoeShwzMsE3llFtKCewjMM5JLyFViAw57P5OBMc+TB6Q1PArmbiYZ9q3BvEGwaoS21CUCJnlAhfWLkJZiumqx40VcnKJmvHZ2Nf73g1oLniIwt0vihqq5sgQhzy+JWid5C2k6WYetlNQcDs4Wo63i8v8AqP56wH2aQC2SuOwYfnI9gB6PkSio5INabXyCWsubdJHziMGxlaxU/98DmqjigSYaVTzOsSRGwXEX2r09iYBK3kKm9Hv3X40MfnHWVBB/rxA9CB2nSbRlXAZKDujuumux8KqlaN9qraFafwuUlLPyjBMHaeR46soBmXM2kAVjeJXNHG0uCM+RlWolzTUCHn0QbZXHkq9Dml5NmfTiROAK2q1CFSW2wsr0E1T4ZQvCCI0fS9Hp+9VOjr3LyoK3EdPpKUazYwteTcP9S5bCil7JRup8s3pfJykFR6h6l9pVb2tAhfUZ1Bq+I+FZs4RHMDa4Ah07JnaouEfVN9OQZpYCSX/jPoR85iIR91gD0oI6gbHbUCOIiBy87x2wBFUWfIP+lwWvAQOrEa6I25bjAZXom2g3e8tRS86PYuC3IstVqOB1mq3TekihGySZdw6uzDy0bJxRCmYtig05cLuocbIcSXq+h/N9ZfimZsySrlhfSUqdlazlZlQeoCr+9HQZMwGp+scUA+slmg0jwnOdMmWCX9Wfp9zcTZln31rMbwXjfD3N2VPbzT+A1MYqMNc+yYeBKA3qGxD2fyqxYOw4kTEFYgjGWC7C2/pMlhigRHdxLlpo25QO6lNgY2v1JbrF/lvBxAKAz9Halw/UcIbSvddAST0jDUKgF3+krkLX5khC1pkkKg08RrtdszSeOK9Cu6+RPsEEGiiIvZK4icR87T85JzCTxJq+nwA9KY1NLtb+BR3isHDQd/pcAAAAAElFTkSuQmCC"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">edeXa</p>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-start flex-column project disable">
+                                    <div class="app-img"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABHNCSVQICAgIfAhkiAAABQNJREFUWEe9WGtMHFUU/u7skoC0qKUVSv1hSjVpTaoGbW20DbYqggrMIDU2/qlRt+wutKm2JjSxRBPwUW0D7CzV9o8GE0NZ6KJYbWzxEWlt6EOMtUbbqD+UqhATHguz3OsZVhDYmbnLVp1kfuzec879zvucYSgLvgtgI71OzwAMsQZh7wUJnfWxqr8GhW2X8I5hHAUMRYFspLGvAZbpyCDQjf6+deiqic4JlBp8CAxhepkjHxcvoM27O0ZUHrgVXDkjvYjzJrT5KqR0kwT5NW5kZv1MP7OdlRXfo//yclPZv1ELBjVYB8Z2OmoiMIpI9A50VvYmBErVu0jmOmeZYgTG+M3oqLxkypxuRgZN7yYBqyWX/YmxoWXoePZ3R7rSgB8uZR/RuGzphIgSgnK0etsnaWb6tTiwDG52gkA5xxPnheS6I7YXqY03QXGdp3PFWTnRSmAemU4TH2hawAOm6JbCBAQgesnfebbBXfzyfLgzTpLmyyVxcxEj0RX4oGrUGZB5qupvU5o+biFwAK1byHqMgNk8WtNeOt4myVhSTdxDWfXJbDrrVHx4z0KkpF8gLRdMY+AweDnCvpC9q/Ry4nmHXO6WWGcXQt5aKxr72qA2rqE4+GKKSaAZoQorq8VICg4sQLrxFQFaIrFONwYH78NHO4bmBsjMQDVQC0XZSYw/YHDkTny4vd/BOsfJzfmSIDYwwm9Ep/9HOzrn6mlyafqXEHwX2vxHbS8roURwKUFJNTYQ5Ztw2HfICbQckLPKQBGleJrLuceZ2cnEIUpxWc+U9BcZmPtfTce8eedISq4kbr6FoeShwzMsE3llFtKCewjMM5JLyFViAw57P5OBMc+TB6Q1PArmbiYZ9q3BvEGwaoS21CUCJnlAhfWLkJZiumqx40VcnKJmvHZ2Nf73g1oLniIwt0vihqq5sgQhzy+JWid5C2k6WYetlNQcDs4Wo63i8v8AqP56wH2aQC2SuOwYfnI9gB6PkSio5INabXyCWsubdJHziMGxlaxU/98DmqjigSYaVTzOsSRGwXEX2r09iYBK3kKm9Hv3X40MfnHWVBB/rxA9CB2nSbRlXAZKDujuumux8KqlaN9qraFafwuUlLPyjBMHaeR46soBmXM2kAVjeJXNHG0uCM+RlWolzTUCHn0QbZXHkq9Dml5NmfTiROAK2q1CFSW2wsr0E1T4ZQvCCI0fS9Hp+9VOjr3LyoK3EdPpKUazYwteTcP9S5bCil7JRup8s3pfJykFR6h6l9pVb2tAhfUZ1Bq+I+FZs4RHMDa4Ah07JnaouEfVN9OQZpYCSX/jPoR85iIR91gD0oI6gbHbUCOIiBy87x2wBFUWfIP+lwWvAQOrEa6I25bjAZXom2g3e8tRS86PYuC3IstVqOB1mq3TekihGySZdw6uzDy0bJxRCmYtig05cLuocbIcSXq+h/N9ZfimZsySrlhfSUqdlazlZlQeoCr+9HQZMwGp+scUA+slmg0jwnOdMmWCX9Wfp9zcTZln31rMbwXjfD3N2VPbzT+A1MYqMNc+yYeBKA3qGxD2fyqxYOw4kTEFYgjGWC7C2/pMlhigRHdxLlpo25QO6lNgY2v1JbrF/lvBxAKAz9Halw/UcIbSvddAST0jDUKgF3+krkLX5khC1pkkKg08RrtdszSeOK9Cu6+RPsEEGiiIvZK4icR87T85JzCTxJq+nwA9KY1NLtb+BR3isHDQd/pcAAAAAElFTkSuQmCC"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">edeXa</p>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-start flex-column project disable">
+                                    <div class="app-img"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABHNCSVQICAgIfAhkiAAABQNJREFUWEe9WGtMHFUU/u7skoC0qKUVSv1hSjVpTaoGbW20DbYqggrMIDU2/qlRt+wutKm2JjSxRBPwUW0D7CzV9o8GE0NZ6KJYbWzxEWlt6EOMtUbbqD+UqhATHguz3OsZVhDYmbnLVp1kfuzec879zvucYSgLvgtgI71OzwAMsQZh7wUJnfWxqr8GhW2X8I5hHAUMRYFspLGvAZbpyCDQjf6+deiqic4JlBp8CAxhepkjHxcvoM27O0ZUHrgVXDkjvYjzJrT5KqR0kwT5NW5kZv1MP7OdlRXfo//yclPZv1ELBjVYB8Z2OmoiMIpI9A50VvYmBErVu0jmOmeZYgTG+M3oqLxkypxuRgZN7yYBqyWX/YmxoWXoePZ3R7rSgB8uZR/RuGzphIgSgnK0etsnaWb6tTiwDG52gkA5xxPnheS6I7YXqY03QXGdp3PFWTnRSmAemU4TH2hawAOm6JbCBAQgesnfebbBXfzyfLgzTpLmyyVxcxEj0RX4oGrUGZB5qupvU5o+biFwAK1byHqMgNk8WtNeOt4myVhSTdxDWfXJbDrrVHx4z0KkpF8gLRdMY+AweDnCvpC9q/Ry4nmHXO6WWGcXQt5aKxr72qA2rqE4+GKKSaAZoQorq8VICg4sQLrxFQFaIrFONwYH78NHO4bmBsjMQDVQC0XZSYw/YHDkTny4vd/BOsfJzfmSIDYwwm9Ep/9HOzrn6mlyafqXEHwX2vxHbS8roURwKUFJNTYQ5Ztw2HfICbQckLPKQBGleJrLuceZ2cnEIUpxWc+U9BcZmPtfTce8eedISq4kbr6FoeShwzMsE3llFtKCewjMM5JLyFViAw57P5OBMc+TB6Q1PArmbiYZ9q3BvEGwaoS21CUCJnlAhfWLkJZiumqx40VcnKJmvHZ2Nf73g1oLniIwt0vihqq5sgQhzy+JWid5C2k6WYetlNQcDs4Wo63i8v8AqP56wH2aQC2SuOwYfnI9gB6PkSio5INabXyCWsubdJHziMGxlaxU/98DmqjigSYaVTzOsSRGwXEX2r09iYBK3kKm9Hv3X40MfnHWVBB/rxA9CB2nSbRlXAZKDujuumux8KqlaN9qraFafwuUlLPyjBMHaeR46soBmXM2kAVjeJXNHG0uCM+RlWolzTUCHn0QbZXHkq9Dml5NmfTiROAK2q1CFSW2wsr0E1T4ZQvCCI0fS9Hp+9VOjr3LyoK3EdPpKUazYwteTcP9S5bCil7JRup8s3pfJykFR6h6l9pVb2tAhfUZ1Bq+I+FZs4RHMDa4Ah07JnaouEfVN9OQZpYCSX/jPoR85iIR91gD0oI6gbHbUCOIiBy87x2wBFUWfIP+lwWvAQOrEa6I25bjAZXom2g3e8tRS86PYuC3IstVqOB1mq3TekihGySZdw6uzDy0bJxRCmYtig05cLuocbIcSXq+h/N9ZfimZsySrlhfSUqdlazlZlQeoCr+9HQZMwGp+scUA+slmg0jwnOdMmWCX9Wfp9zcTZln31rMbwXjfD3N2VPbzT+A1MYqMNc+yYeBKA3qGxD2fyqxYOw4kTEFYgjGWC7C2/pMlhigRHdxLlpo25QO6lNgY2v1JbrF/lvBxAKAz9Halw/UcIbSvddAST0jDUKgF3+krkLX5khC1pkkKg08RrtdszSeOK9Cu6+RPsEEGiiIvZK4icR87T85JzCTxJq+nwA9KY1NLtb+BR3isHDQd/pcAAAAAElFTkSuQmCC"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">edeXa</p>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-start flex-column project disable">
+                                    <div class="app-img"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABHNCSVQICAgIfAhkiAAABQNJREFUWEe9WGtMHFUU/u7skoC0qKUVSv1hSjVpTaoGbW20DbYqggrMIDU2/qlRt+wutKm2JjSxRBPwUW0D7CzV9o8GE0NZ6KJYbWzxEWlt6EOMtUbbqD+UqhATHguz3OsZVhDYmbnLVp1kfuzec879zvucYSgLvgtgI71OzwAMsQZh7wUJnfWxqr8GhW2X8I5hHAUMRYFspLGvAZbpyCDQjf6+deiqic4JlBp8CAxhepkjHxcvoM27O0ZUHrgVXDkjvYjzJrT5KqR0kwT5NW5kZv1MP7OdlRXfo//yclPZv1ELBjVYB8Z2OmoiMIpI9A50VvYmBErVu0jmOmeZYgTG+M3oqLxkypxuRgZN7yYBqyWX/YmxoWXoePZ3R7rSgB8uZR/RuGzphIgSgnK0etsnaWb6tTiwDG52gkA5xxPnheS6I7YXqY03QXGdp3PFWTnRSmAemU4TH2hawAOm6JbCBAQgesnfebbBXfzyfLgzTpLmyyVxcxEj0RX4oGrUGZB5qupvU5o+biFwAK1byHqMgNk8WtNeOt4myVhSTdxDWfXJbDrrVHx4z0KkpF8gLRdMY+AweDnCvpC9q/Ry4nmHXO6WWGcXQt5aKxr72qA2rqE4+GKKSaAZoQorq8VICg4sQLrxFQFaIrFONwYH78NHO4bmBsjMQDVQC0XZSYw/YHDkTny4vd/BOsfJzfmSIDYwwm9Ep/9HOzrn6mlyafqXEHwX2vxHbS8roURwKUFJNTYQ5Ztw2HfICbQckLPKQBGleJrLuceZ2cnEIUpxWc+U9BcZmPtfTce8eedISq4kbr6FoeShwzMsE3llFtKCewjMM5JLyFViAw57P5OBMc+TB6Q1PArmbiYZ9q3BvEGwaoS21CUCJnlAhfWLkJZiumqx40VcnKJmvHZ2Nf73g1oLniIwt0vihqq5sgQhzy+JWid5C2k6WYetlNQcDs4Wo63i8v8AqP56wH2aQC2SuOwYfnI9gB6PkSio5INabXyCWsubdJHziMGxlaxU/98DmqjigSYaVTzOsSRGwXEX2r09iYBK3kKm9Hv3X40MfnHWVBB/rxA9CB2nSbRlXAZKDujuumux8KqlaN9qraFafwuUlLPyjBMHaeR46soBmXM2kAVjeJXNHG0uCM+RlWolzTUCHn0QbZXHkq9Dml5NmfTiROAK2q1CFSW2wsr0E1T4ZQvCCI0fS9Hp+9VOjr3LyoK3EdPpKUazYwteTcP9S5bCil7JRup8s3pfJykFR6h6l9pVb2tAhfUZ1Bq+I+FZs4RHMDa4Ah07JnaouEfVN9OQZpYCSX/jPoR85iIR91gD0oI6gbHbUCOIiBy87x2wBFUWfIP+lwWvAQOrEa6I25bjAZXom2g3e8tRS86PYuC3IstVqOB1mq3TekihGySZdw6uzDy0bJxRCmYtig05cLuocbIcSXq+h/N9ZfimZsySrlhfSUqdlazlZlQeoCr+9HQZMwGp+scUA+slmg0jwnOdMmWCX9Wfp9zcTZln31rMbwXjfD3N2VPbzT+A1MYqMNc+yYeBKA3qGxD2fyqxYOw4kTEFYgjGWC7C2/pMlhigRHdxLlpo25QO6lNgY2v1JbrF/lvBxAKAz9Halw/UcIbSvddAST0jDUKgF3+krkLX5khC1pkkKg08RrtdszSeOK9Cu6+RPsEEGiiIvZK4icR87T85JzCTxJq+nwA9KY1NLtb+BR3isHDQd/pcAAAAAElFTkSuQmCC"
+                                            alt="logo"></div>
+                                    <p class="font-14 color-dark">edeXa</p>
+                                </div>
+                            </button>
+                        </div><button class="font-14 fw-bold color-blue more-project">More from edeXa
+                            Library</button>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center header-dropdown dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="menu-profile btn btn-secondary"><img src="assets/images/qrcode.png"
+                            alt="profile"></button>
+                    <div tabindex="-1" role="menu" aria-hidden="true" class="rounded-10 profile-list dropdown-menu">
+                        <button type="button" tabindex="0" role="menuitem" class="project-list dropdown-item">
+                            <p class="font-11 color-black2 bg-lightblue text-center profile-title rounded-5">This
+                                account is managed by edeXa.<a class="color-blue" href="/profile"> Learn more</a>
+                            </p>
+                            <div class="profile-detail"><img src="assets/images/qrcode.png" alt="profile" width="80px"
+                                    height="80px">
+                                <p class="color-black1 font-16 fw-bold">Aliksm Shaik</p>
+                                <p class="color-black1 font-14 fw-normal">prasham@mailinator.com</p>
+                                <div class="font-13 bg-blue py-1 color-white rounded-5 manage-button w-100">Manage
+                                    your edeXa Account</div>
+                            </div>
+                        </button>
+                        <div class="profile-footer w-100">
+                            <div class="d-flex justify-content-center align-items-center logout"><button class="font-13 color-black-2 rounded-5 border-grey w-100">Logout</button></div>
+                            <div class="d-flex justify-content-center align-items-center policy"><a class="font-11 color-light-grey" href="/profile">Privacy Policy</a><span class="font-11" style="padding: 0px 10px;">-</span><a class="font-11 color-light-grey" href="/profile">Terms of Service</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex align-items-center flex-column justify-content-center minheight-100 pt-70 pb-70 width-940 edit-profile">
+            <div class="d-flex align-items-center text-center"><button class="back-button"><img
+                        src="assets/images/svg/back.svg" alt="back-arrow"></button>
+                <div class="personal-info">
+                    <p class="font-30 fw-bold color-black1">My Order</p>
+                    <p class="font-16 color-black2">My Each And Order
+                    </p>
+                </div>
+            </div>
+            <div class="rounded-10 border-grey w-100 mt-30 my-order-info">
+                <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                My Order 1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row order-information">
+                    <div class="col-md-3 order-information-col">
+                        <div class="order-img">
+                            <img src="assets/images/my-order-img1.jpg" alt="order-img" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-information-col">
+                        <div class="order-details">
+                            <h4>More & More Unisex-Adult Cotton Hooded Neck</h4>
+                             <div class="order-star mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ml-2">2.215</span> 
+                             </div>
+                             <div class="price-order">
+                                 <h4>&#8377;<span>599-</span>&#8377;<span>799</span></h4>
+                             </div>
+                             <p>More Colours Available</p>
+                            <button class="custom-btn btn-9">Buy It Again</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-information-col">
+                        <div class="order-btn">
+                            <div class="text-center">
+                              <button class="btn " type="button">Write A Product Review</button>
+                              <button class="btn " type="button">Archive Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                My Order 2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="order-img">
+                            <img src="assets/images/mt-order-img2.jpg" alt="order-img" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="order-details">
+                            <h4>Smart Brand In india With Alexa (Black)Return Eligibilti</h4>
+                            <div class="order-star mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ml-2">2.215</span> 
+                             </div>
+                             <div class="price-order">
+                                 <h4>&#8377;<span>599-</span>&#8377;<span>799</span></h4>
+                             </div>
+                             <p>More Colours Available</p>
+                            <button class="custom-btn btn-9">Buy It Again</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="order-btn">
+                            <div class="text-center">
+                              <button class="btn " type="button">Write A Product Review</button>
+                              <button class="btn " type="button">Archive Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    My Order 3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="order-img mb-2">
+                                <img src="assets/images/my-order-img3.jpg" alt="order-img" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="order-details mb-2">
+                                <h4>Smart Brand In india With Alexa (Black)Return Eligibilti</h4>
+                                <div class="order-star mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ml-2">2.215</span> 
+                             </div>
+                             <div class="price-order">
+                                 <h4>&#8377;<span>599-</span>&#8377;<span>799</span></h4>
+                             </div>
+                             <p>More Colours Available</p>
+                                <button class="custom-btn btn-9">Buy It Again</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="order-btn mb-2">
+                                <div class="text-center">
+                                  <button class="btn " type="button">Write A Product Review</button>
+                                  <button class="btn " type="button">Archive Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                <!-- <div class="d-flex align-items-start justify-content-between flex-wrap info-title">
+                    <div>
+                        <p class="font-20 fw-bold">Basic info</p>
+                        <p class="font-14 fw-normal color-black2">Some info may be visible to other people using Google services.
+                            <a class="color-blue" href="/profile"> Learn more</a>
+                        </p>
+                    </div><a class="font-14 color-blue fw-bold" href="/profile">Edit Basic Info</a>
+                </div>
+                <hr style="margin: 0px;">
+                <div class="d-flex align-items-center info-field flex-wrap">
+                    <div class="info-name">
+                        <p class="font-12 color-black2 fw-normal">PHOTO</p>
+                    </div>
+                    <div class="d-flex align-items-center info-image">
+                        <div class="photo d-flex align-items-center justify-content-center"><img src="assets/images/qrcode.png" alt="profile" style="width: 100%;"></div>
+                    </div>
+                    <p class="color-black2 font-14 ml-auto d-block info-detail">Logo should be in 150 x 150 pixel required.
+                    </p>
+                </div>
+                <hr style="margin: 0px;">
+                <div class="d-flex align-items-center info-field">
+                    <div class="info-name">
+                        <p class="font-12 color-black2 fw-normal">FIRST NAME</p>
+                    </div>
+                    <div class="d-flex align-items-center info-image">
+                        <p class="color-black2 font-16 fw-bold info-text">Aliksm</p>
+                    </div>
+                </div>
+                <hr style="margin: 0px;">
+                <div class="d-flex align-items-center info-field">
+                    <div class="info-name">
+                        <p class="font-12 color-black2 fw-normal">LAST NAME</p>
+                    </div>
+                    <div class="d-flex align-items-center info-image">
+                        <p class="color-black2 font-16 fw-bold info-text">Shaik</p>
+                    </div>
+                </div>
+                <hr style="margin: 0px;">
+                <div class="d-flex align-items-center info-field">
+                    <div class="info-name">
+                        <p class="font-12 color-black2 fw-normal">birthday</p>
+                    </div>
+                    <div class="d-flex align-items-center info-image">
+                        <p class="color-black2 font-16 fw-bold">January 1, 1970</p>
+                    </div>
+                </div>
+                <hr style="margin: 0px;">
+                <div class="d-flex align-items-center info-field">
+                    <div class="info-name">
+                        <p class="font-12 color-black2 fw-normal">Gender</p>
+                    </div>
+                    <div class="d-flex align-items-center info-image">
+                        <p class="color-black2 font-16 fw-bold">Male</p>
+                    </div>
+                </div> -->
+            </div>
+            <div class="rounded-10 border-grey w-100 mt-30 contact-info">
+                <div class="d-flex align-items-start justify-content-between flex-wrap info-title">
+                    <div>
+                        <p class="font-20 fw-bold">Contact info</p>
+                        <p class="font-14 fw-normal color-black2">You can see and can change your contact info.</p>
+                    </div><a class="font-14 color-blue fw-bold" href="/profile">Edit Contact Info</a>
+                </div>
+                <hr style="margin: 0px;">
+                <div class="d-flex align-items-center info-field">
+                    <div class="info-name">
+                        <p class="font-12 color-black2 fw-normal">Email</p>
+                    </div>
+                    <div class="d-flex align-items-center info-image">
+                        <p class="color-black2 font-16 fw-bold info-text">prasham@mailinator.com</p>
+                    </div>
+                </div>
+                <hr style="margin: 0px;">
+                <div class="d-flex align-items-center info-field">
+                    <div class="info-name">
+                        <p class="font-12 color-black2 fw-normal">Phone</p>
+                    </div>
+                    <div class="d-flex align-items-center info-image">
+                        <p class="color-black2 font-16 fw-bold info-text">+919521021925<span class="text-success font-13" style="margin: 0px 10px;"><i
+                                    class="fas fa-check-circle mx-1"></i>Verified</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center footer w-100 flex-wrap">
+            <p class="font-13 color-light-grey">edeXa - Accounts © 2021</p>
+            <div class="d-flex"><a class="font-13 color-light-grey" href="/">Privacy</a><a class="font-13 color-light-grey" href="/">Terms</a></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
