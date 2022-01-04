@@ -1,0 +1,74 @@
+.home-section {
+  text-align: center;
+}
+
+.home-section .profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  overflow: hidden;
+  background-color: #c5c5c5;
+}
+
+.home-section .profile img {
+  width: 100%;
+}
+
+.home-section .info-section {
+  padding: 25px 20px 80px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.home-section .info-section .info-name {
+  max-width: 180px;
+  line-height: 26px;
+  padding-bottom: 25px;
+}
+
+.home-section .info-section .info-button {
+  height: 57px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  border-width: 1px 0 0 0;
+  border-color: #dadce0;
+  border-style: solid;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.home-section .info-section .info-button:hover {
+  background-color: #e8f0fe;
+}
+
+.disabled-link {
+  pointer-events: none;
+}
+
+.otp-input input {
+  width: 100% !important;
+  margin-right: 10px;
+}
+
+.otp-input {
+  width: 60px;
+}
+
+.otp-info {
+  font-size: 14px;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.otp-info span {
+  color: #073e84;
+}
+
+.otp-info+div {
+  width: 100%;
+}

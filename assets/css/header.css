@@ -1,0 +1,216 @@
+.header {
+  background-color: #f8f8f8;
+  position: fixed;
+  top: 0;
+  padding: 15px 0 15px 15px;
+  height: 60px;
+  z-index: 2;
+}
+.header .header-dropdown {
+  width: 60px;
+  height: 60px;
+}
+.header .header-dropdown:hover,
+.header .header-dropdown:focus {
+  background-color: #fff;
+}
+.header .menu-button {
+  background: transparent;
+  border: none;
+}
+.header .menu-button:focus {
+  box-shadow: none;
+  background-color: #fff;
+}
+.header .menu-icon {
+  color: #868686;
+  font-size: 22px;
+}
+.header .menu-profile {
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+.header .menu-profile img,
+.header .menu-profile i {
+  width: 100%;
+  height: auto;
+}
+.header .menu-profile:focus {
+  box-shadow: none;
+  background-color: #fff;
+}
+.header .menu-list {
+  padding: 10px;
+  width: 398px;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.header .projects-section {
+  overflow: auto;
+  padding-bottom: 57px;
+  height: 100%;
+}
+.header .projects-section::-webkit-scrollbar {
+  display: none;
+}
+.header .project-list {
+  padding: 0;
+}
+.header .project-list:hover,
+.header .project-list:focus {
+  color: #212529;
+  background-color: transparent;
+}
+.header .menu-list .project-list .project {
+  width: 87px;
+  height: 87px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 0 4px 5px;
+  pointer-events: visible;
+}
+.header .project .app-img {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .menu-list .project-list .project img {
+  width: 100%;
+}
+.header .menu-list .project-list .project:hover,
+.header .menu-list .project-list .project:disabled {
+  background-color: #e8f0fe;
+  border-radius: 5px;
+}
+.header .menu-list .project-list .project:nth-child(4n) {
+  margin: 0 0 5px 0;
+}
+.header .menu-list .project-list .project p {
+  padding-top: 5px;
+}
+.header .menu-list .more-project {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 57px;
+  background-color: #fff;
+  border-width: 1px 0 0px 0;
+  border-color: #dadce0;
+  border-style: solid;
+}
+.header .menu-list .more-project:hover {
+  background-color: #e8f0fe;
+}
+.header .profile-list {
+  width: 300px;
+  height: 310px;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 20px;
+}
+.header .profile-list .project-list {
+  padding: 5px;
+}
+.header .profile-list .profile-title {
+  padding: 4px 0;
+  line-height: 12px;
+}
+.header .profile-list .profile-detail {
+  text-align: center;
+  margin-top: 20px;
+}
+.header .profile-list .profile-detail img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.header .profile-list .profile-detail p {
+  line-height: 26px;
+}
+.header .profile-list .profile-detail .manage-button {
+  height: 28px;
+}
+.header .profile-id-list {
+  overflow: auto;
+  /* height: 50%; */
+  max-height: 250px;
+  padding-bottom: 80px !important;
+}
+.header .profile-id-list::-webkit-scrollbar {
+  display: none;
+}
+.header .project-list .profile-description {
+  padding: 10px;
+  border: none;
+}
+.header .project-list .profile-description img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.header .profile-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+.header .profile-footer .logout {
+  border-width: 1px 0 1px 0;
+  border-color: #dadce0;
+  border-style: solid;
+  height: 50px;
+}
+.header .profile-footer .logout button {
+  background: transparent;
+  margin: 0 10px;
+  padding: 5px;
+}
+.header .profile-footer .policy {
+  text-align: center;
+  height: 30px;
+}
+
+.header .kyc-title {
+  position: relative;
+  padding-left: 40px;
+}
+.header .kyc-title::before {
+  position: absolute;
+  content: "";
+  border-left: 1px solid #dadce0;
+  left: 20px;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .header .menu-list {
+    width: 300px;
+    transform: translate3d(-180px, 60px, 0px) !important;
+  }
+  .header .menu-list .project-list .project {
+    width: 80px;
+    height: 80px;
+  }
+  .header .menu-list .project-list .project:nth-child(4n) {
+    margin: 0 9px 5px 0;
+  }
+  .header .profile-list {
+    margin-top: 25%;
+  }
+  .header .kyc-title {
+    padding-left: 20px;
+  }
+  .header .kyc-title::before {
+    left: 10px;
+  }
+}

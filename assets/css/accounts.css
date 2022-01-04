@@ -1,0 +1,113 @@
+.inner-content {
+  padding: 25px 20px;
+}
+.document {
+  flex-wrap: nowrap;
+}
+.tab-card,
+.tab-card a {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 185px;
+  width: 100%;
+}
+.tab-card:hover,
+.tab-card a:hover{
+  background-color: #E8F0FE;
+}
+.active-tab,
+.active-tab a{
+  border: 1px solid #073D83;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.active-tab a i,.active-tab a p{
+  color: #073D83;
+}
+.tab-card:first-child {
+  margin-left: 0 !important;
+}
+.tab-card:last-child {
+  margin-right: 0 !important;
+}
+.document-tab {
+  font-size: 30px;
+}
+.account-button{
+  position: fixed;
+  bottom: 60px;
+  border-top: 1px solid #DADCE0;
+  padding: 15px 0 0;
+  /* padding: 0 .75rem;
+  left: 0; */
+}
+.action-btn {
+  width: 120px;
+  height: 50px;
+}
+.upload-file {
+  height: 200px;
+  border-style: dashed;
+  position: relative;
+  cursor: pointer;
+}
+.upload-file i {
+  font-size: 100px;
+  margin-top: 30px;
+}
+.upload-file p {
+  padding: 10px;
+  border-top: 1px solid #dadce0;
+  height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .document {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tab-card {
+    margin: 5px 0 !important;
+  }
+  .account-button{
+    width: 90%;
+  }
+  .upload-file{
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tab-card,
+  .tab-card a {
+    min-width: 140px;
+  }
+  .account-gender i {
+    display: none;
+  }
+  .action-btn {
+    width: 80px;
+    height: 40px;
+  }
+  .account-button{
+    padding: 10px .75rem 0;
+    left: 0;  
+    width: 100%;
+  }
+  .document{
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .inner-content {
+    padding: 15px 10px;
+  }
+  .tab-card,
+  .tab-card a {
+    min-width: 130px;
+  }
+}
